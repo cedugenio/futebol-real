@@ -20,7 +20,7 @@ type Atleta struct {
 
 func GetInfoAtleta(id int) {
 	url := fmt.Sprintf("https://api.api-futebol.com.br/v1/atletas/%d", id)
-	var bearer = "Bearer " + "test_2007f86cd099bbdf5addef9a6005bf"
+	var bearer = "Bearer " + ""
 	req, err := http.NewRequest("GET", url, nil)
 	req.Header.Add("Authorization", bearer)
 	if err != nil {
